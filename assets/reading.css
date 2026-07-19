@@ -18,8 +18,11 @@
 }
 .langswitch button:not([aria-pressed="true"]):hover { color: var(--accent); }
 
-.page-title { font-size: 32px; font-weight: 600; letter-spacing: -.015em; margin: 0 0 8px; }
-.lede { color: var(--muted); font-size: 16.5px; margin-bottom: 6px; }
+.page-title { font-size: 30px; font-weight: 600; letter-spacing: -.018em; margin: 0 0 10px; }
+.rail .lede { font-size: 14.5px; line-height: 1.55; margin-bottom: 10px; }
+.railtools { display: flex; align-items: center; gap: 10px; margin-top: 16px; }
+.railtools #theme { margin-top: 0; }
+.lede { color: var(--muted); font-size: 16.5px; margin-bottom: 6px; max-width: 68ch; }
 
 /* CJK text needs a slightly different stack + looser leading */
 .zh-text {
@@ -61,7 +64,7 @@
 .quotes .prov.orig-text { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 40%, transparent); }
 
 .quotes blockquote {
-  margin: 0 0 18px; padding: 2px 0 0 20px;
+  margin: 0 0 18px; padding: 2px 0 0 20px; max-width: 72ch;
   border-left: 2px solid color-mix(in srgb, var(--accent) 40%, transparent);
   font-size: 16px;
   animation: reveal .22s ease-out;
@@ -71,7 +74,7 @@
 
 /* original-language text shown alongside a translation */
 .orig {
-  font-size: 15px; color: var(--muted); font-style: italic;
+  max-width: 72ch; font-size: 15px; color: var(--muted); font-style: italic;
   margin: 0 0 18px; padding: 10px 0 0 20px; border-top: 1px dotted var(--rule);
 }
 .orig em { font-style: normal; color: var(--faint); }
@@ -99,15 +102,17 @@
 .shelf > details > summary .n { color: var(--faint); margin-left: 8px; }
 
 .books { list-style: none; margin: 0; padding: 0 0 16px; display: grid; gap: 7px; }
-.books li {
-  display: flex; gap: 14px; align-items: baseline;
-  font-size: 15px; line-height: 1.5;
+/* long shelves flow into columns instead of one endless strip */
+@media (min-width: 860px) {
+  .books { column-count: 2; column-gap: 42px; display: block; }
+  .books li { break-inside: avoid; margin-bottom: 7px; }
 }
-.books .t { flex: 1 1 auto; }
-.books .a {
-  flex: none; max-width: 210px; text-align: right;
-  font-size: 13.5px; color: var(--muted);
+@media (min-width: 1180px) {
+  .books { column-count: 3; column-gap: 34px; }
 }
+.books li { font-size: 15px; line-height: 1.45; }
+.books .t { display: block; }
+.books .a { display: block; font-size: 13px; color: var(--muted); }
 .books .a .nat { color: var(--faint); }
 
 /* ---- nobel table ---- */
@@ -115,7 +120,7 @@
   width: 15px; height: 15px; vertical-align: -2px;
   margin-right: 7px; color: var(--accent-2);
 }
-.nobel { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+.nobel { width: 100%; max-width: 860px; border-collapse: collapse; font-size: 14.5px; }
 .nobel th {
   text-align: left; font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, sans-serif;
   font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase;
@@ -134,7 +139,7 @@
 
 /* ---- note on naming ---- */
 .caveat {
-  margin-top: 40px; padding: 15px 17px;
+  max-width: 80ch; margin-top: 40px; padding: 15px 17px;
   background: var(--surface); border: 1px solid var(--rule);
   border-left: 2px solid color-mix(in srgb, var(--accent-2) 50%, transparent);
   border-radius: 5px; font-size: 14.5px; color: var(--muted); line-height: 1.6;
@@ -143,8 +148,6 @@
 
 @media (max-width: 560px) {
   .page-title { font-size: 26px; }
-  .books li { flex-direction: column; gap: 1px; }
-  .books .a { text-align: left; max-width: none; }
   .quotes blockquote, .orig { padding-left: 14px; }
   .quotes .prov { margin-left: 0; }
 }

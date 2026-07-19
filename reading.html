@@ -11,23 +11,28 @@
 </head>
 <body>
 <div class="wrap">
-  <nav>
-    <a href="index.html">&larr; home</a>
-    <a href="#shelf"><span class="lang-zh">书单</span><span class="lang-en">the list</span></a>
-    <a href="#nobel"><span class="lang-zh">诺贝尔文学奖</span><span class="lang-en">nobel</span></a>
-    <a href="#excerpts"><span class="lang-zh">摘抄</span><span class="lang-en">excerpts</span></a>
-    <span class="spacer"></span>
-    <span class="langswitch">
-      <button type="button" data-lang="en">EN</button>
-      <button type="button" data-lang="zh">中文</button>
-    </span>
-    <button id="theme" type="button" aria-label="Toggle color theme">&#9790;</button>
-  </nav>
-  <header style="margin-top:44px">
-    <h1 class="page-title"><span class="lang-zh">读书记录</span><span class="lang-en">Reading</span></h1>
-    <p class="lede lang-en">A record of what I have read outside mathematics, and the passages I went back and copied out. Mostly nineteenth- and twentieth-century fiction, read in Chinese translation unless the original is English.</p>
-    <p class="lede lang-zh zh-text">数学之外的阅读记录，以及那些让我停下来抄写的段落。多是十九、二十世纪的小说；除英语原著外，均读的中译本。</p>
-  </header>
+  <div class="layout">
+    <aside class="rail">
+      <div class="rail-inner">
+        <h1 class="page-title"><span class="lang-zh">读书记录</span><span class="lang-en">Reading</span></h1>
+        <p class="lede lang-en">A record of what I have read outside mathematics, and the passages I went back and copied out.</p>
+        <p class="lede lang-zh zh-text">数学之外的阅读记录，以及那些让我停下来抄写的段落。</p>
+        <nav>
+          <a href="index.html"><span class="lang-zh">返回主页</span><span class="lang-en">home</span></a>
+          <a href="#shelf"><span class="lang-zh">书单</span><span class="lang-en">the list</span></a>
+          <a href="#nobel"><span class="lang-zh">诺贝尔文学奖</span><span class="lang-en">nobel</span></a>
+          <a href="#excerpts"><span class="lang-zh">摘抄</span><span class="lang-en">excerpts</span></a>
+          <span class="railtools">
+            <span class="langswitch">
+              <button type="button" data-lang="en">EN</button>
+              <button type="button" data-lang="zh">中文</button>
+            </span>
+            <button id="theme" type="button" aria-label="Toggle color theme">&#9790;</button>
+          </span>
+        </nav>
+      </div>
+    </aside>
+    <main>
   <section id="shelf">
     <h2><span class="lang-zh">书单</span><span class="lang-en">The List</span></h2>
     <div class="shelf">
@@ -1166,6 +1171,8 @@
       </details>
     </div>
   </section>
+    </main>
+  </div>
   <div class="caveat">
     <p class="lang-en" style="margin:0"><b>A note on the texts.</b> Apart from the English-language works, I read all of these in Chinese translation, so the English titles here are the standard published ones rather than my own. Passages from books written in English are quoted from the original; the rest are renderings of the Chinese I read, and carry none of the authority of a published translation. Corrections are welcome — please <a href="mailto:jgai@andrew.cmu.edu">write to me</a>.</p>
     <p class="lang-zh zh-text" style="margin:0"><b>关于版本的说明。</b>除英语原著外，以下作品我读的都是中译本，页面上的英文书名取通行译名而非我的翻译。摘抄部分，英语原著引自原文；其余为我据中译本转译的英文，不具备出版译本的权威性。若有错漏，欢迎<a href="mailto:jgai@andrew.cmu.edu">来信指正</a>。</p>

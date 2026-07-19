@@ -217,29 +217,31 @@ def build():
     A('<body>')
     A('<div class="wrap">')
 
-    # ---- nav ----
-    A('  <nav>')
-    A('    <a href="index.html">&larr; home</a>')
-    A('    <a href="#shelf">' + L("书单", "the list") + '</a>')
-    A('    <a href="#nobel">' + L("诺贝尔文学奖", "nobel") + '</a>')
-    A('    <a href="#excerpts">' + L("摘抄", "excerpts") + '</a>')
-    A('    <span class="spacer"></span>')
-    A('    <span class="langswitch">')
-    A('      <button type="button" data-lang="en">EN</button>')
-    A('      <button type="button" data-lang="zh">中文</button>')
-    A('    </span>')
-    A('    <button id="theme" type="button" aria-label="Toggle color theme">&#9790;</button>')
-    A('  </nav>')
-
-    # ---- header ----
-    A('  <header style="margin-top:44px">')
-    A('    <h1 class="page-title">' + L("读书记录", "Reading") + '</h1>')
-    A('    <p class="lede lang-en">A record of what I have read outside mathematics, and the passages '
-      'I went back and copied out. Mostly nineteenth- and twentieth-century fiction, read in Chinese '
-      'translation unless the original is English.</p>')
-    A('    <p class="lede lang-zh zh-text">数学之外的阅读记录，以及那些让我停下来抄写的段落。'
-      '多是十九、二十世纪的小说；除英语原著外，均读的中译本。</p>')
-    A('  </header>')
+    # ---- rail: identity + nav, sticky beside the content ----
+    A('  <div class="layout">')
+    A('    <aside class="rail">')
+    A('      <div class="rail-inner">')
+    A('        <h1 class="page-title">' + L("读书记录", "Reading") + '</h1>')
+    A('        <p class="lede lang-en">A record of what I have read outside mathematics, and the '
+      'passages I went back and copied out.</p>')
+    A('        <p class="lede lang-zh zh-text">数学之外的阅读记录，'
+      '以及那些让我停下来抄写的段落。</p>')
+    A('        <nav>')
+    A('          <a href="index.html">' + L("返回主页", "home") + '</a>')
+    A('          <a href="#shelf">' + L("书单", "the list") + '</a>')
+    A('          <a href="#nobel">' + L("诺贝尔文学奖", "nobel") + '</a>')
+    A('          <a href="#excerpts">' + L("摘抄", "excerpts") + '</a>')
+    A('          <span class="railtools">')
+    A('            <span class="langswitch">')
+    A('              <button type="button" data-lang="en">EN</button>')
+    A('              <button type="button" data-lang="zh">中文</button>')
+    A('            </span>')
+    A('            <button id="theme" type="button" aria-label="Toggle color theme">&#9790;</button>')
+    A('          </span>')
+    A('        </nav>')
+    A('      </div>')
+    A('    </aside>')
+    A('    <main>')
 
     # ---- shelf ----
     A('  <section id="shelf">')
@@ -322,6 +324,9 @@ def build():
         A('      </details>')
     A('    </div>')
     A('  </section>')
+
+    A('    </main>')
+    A('  </div>')
 
     # ---- note ----
     A('  <div class="caveat">')

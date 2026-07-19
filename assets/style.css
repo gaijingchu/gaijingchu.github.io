@@ -40,21 +40,61 @@
     padding: 0 24px 96px;
     -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 680px; margin: 0 auto; }
+  .wrap { max-width: 1120px; margin: 0 auto; }
+
+  /* ---- two-column shell: sticky identity rail + scrolling content ---- */
+  .layout {
+    display: grid;
+    grid-template-columns: 264px minmax(0, 1fr);
+    gap: 0 60px;
+    align-items: start;
+  }
+  .rail { position: sticky; top: 28px; }
+  .rail-inner {
+    padding-right: 26px;
+    border-right: 1px solid var(--rule);
+    min-height: 60vh;
+  }
+  main { min-width: 0; padding-top: 4px; }
+  /* prose stays readable even though the column is wide */
+  main p, .interests .desc, .edu .meta { max-width: 68ch; }
+
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; gap: 0; }
+    .rail { position: static; }
+    .rail-inner { padding-right: 0; border-right: none; min-height: 0; }
+  }
 
   a { color: var(--accent); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
   a:hover { border-bottom-color: var(--accent); }
 
-  /* ---- nav ---- */
+  /* ---- nav: a vertical index inside the rail ---- */
   nav {
-    display: flex; flex-wrap: wrap; gap: 4px 20px; align-items: center;
-    padding: 30px 0 0;
+    display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+    padding: 26px 0 0;
     font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, sans-serif;
     font-size: 14px; letter-spacing: .02em;
   }
-  nav a { color: var(--muted); border: none; }
+  nav a {
+    color: var(--muted); border: none; position: relative;
+    padding: 2px 0 2px 15px;
+  }
+  nav a::before {
+    content: ""; position: absolute; left: 0; top: 50%;
+    width: 6px; height: 1px; background: var(--rule);
+    transition: width .18s ease, background .18s ease;
+  }
   nav a:hover { color: var(--accent); }
-  nav .spacer { flex: 1 1 auto; }
+  nav a:hover::before { width: 10px; background: var(--accent); }
+  nav .spacer { display: none; }
+  nav #theme { margin-top: 14px; }
+  @media (max-width: 900px) {
+    nav { flex-direction: row; flex-wrap: wrap; gap: 4px 18px; align-items: center; }
+    nav a { padding-left: 0; }
+    nav a::before { display: none; }
+    nav .spacer { display: block; flex: 1 1 auto; }
+    nav #theme { margin-top: 0; }
+  }
   #theme {
     background: none; border: 1px solid var(--rule); border-radius: 999px;
     color: var(--muted); cursor: pointer; font: inherit; padding: 3px 11px;
@@ -66,8 +106,8 @@
      Kruskal MST + Fermat-point insertion, so each solid dot meets its three
      edges at 120 degrees. Bleeds a little wider than the text column. */
   .banner {
-    margin: 34px calc(50% - 50vw) 0;
-    padding: 0 max(24px, calc(50vw - 460px));
+    margin: 30px 0 34px;
+    padding: 0;
     color: var(--accent);
     line-height: 0;
     overflow: hidden;
@@ -89,19 +129,18 @@
     @keyframes fade { from { opacity: 0; } }
   }
 
-  /* ---- hero ---- */
-  header.hero {
-    display: flex; gap: 28px; align-items: flex-start;
-    margin: 30px 0 0;
-  }
+  /* ---- identity block (lives in the rail) ---- */
   h1 {
-    font-size: 34px; line-height: 1.15; font-weight: 600;
-    letter-spacing: -.015em; margin: -4px 0 6px;
+    font-size: 31px; line-height: 1.12; font-weight: 600;
+    letter-spacing: -.018em; margin: 0 0 4px;
   }
-  h1 .zh { font-size: 22px; color: var(--faint); font-weight: 400; margin-left: 10px; }
-  .tagline { color: var(--muted); margin: 0 0 14px; font-size: 16px; }
+  h1 .zh {
+    display: block; font-size: 17px; color: var(--faint);
+    font-weight: 400; margin: 5px 0 0; letter-spacing: .12em;
+  }
+  .tagline { color: var(--muted); margin: 12px 0 16px; font-size: 15px; line-height: 1.5; }
   .badges {
-    display: flex; flex-wrap: wrap; gap: 8px;
+    display: flex; flex-wrap: wrap; gap: 7px;
     font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, sans-serif;
     font-size: 13px;
   }
@@ -112,16 +151,28 @@
   .badges a:hover { color: var(--accent); border-color: var(--accent); }
 
   /* ---- sections ---- */
-  section { margin-top: 54px; }
+  section { margin-top: 52px; scroll-margin-top: 24px; }
+  section:first-child { margin-top: 0; }
   h2 {
     font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, sans-serif;
     font-size: 12px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
-    color: var(--faint); margin: 0 0 18px;
+    color: var(--faint); margin: 0 0 20px;
     padding-bottom: 8px; border-bottom: 1px solid var(--rule);
+    display: flex; align-items: center; gap: 9px;
+  }
+  /* small accent tick before each section title */
+  h2::before {
+    content: ""; flex: none;
+    width: 5px; height: 5px; border-radius: 1px;
+    background: var(--accent); transform: rotate(45deg);
   }
   p { margin: 0 0 14px; }
   /* ---- research interests ---- */
   .interests { list-style: none; padding: 0; margin: 18px 0 20px; display: grid; gap: 10px; }
+  @media (min-width: 1000px) {
+    /* align-items:start so an expanded card does not stretch its neighbour */
+    .interests { grid-template-columns: 1fr 1fr; align-items: start; }
+  }
   .interests > li {
     display: flex; gap: 16px; align-items: flex-start;
     padding: 15px 17px;
@@ -235,6 +286,10 @@
 
   /* ---- awards ---- */
   .awards { list-style: none; padding: 0; margin: 0; }
+  @media (min-width: 1000px) {
+    .awards { display: grid; grid-template-columns: 1fr 1fr; column-gap: 38px; }
+    .awards li:nth-last-child(2) { border-bottom: none; }
+  }
   .awards li {
     display: flex; gap: 16px; padding: 7px 0;
     border-bottom: 1px dotted var(--rule);
@@ -250,7 +305,7 @@
   .hl { color: var(--accent-2); font-weight: 600; }
 
   footer {
-    margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--rule);
+    margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--rule);
     font-size: 14px; color: var(--faint);
     display: flex; flex-wrap: wrap; gap: 6px 18px;
   }
