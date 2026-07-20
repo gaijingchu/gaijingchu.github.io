@@ -246,6 +246,10 @@ def build():
     # ---- shelf ----
     A('  <section id="shelf">')
     A('    <h2>' + L("书单", "The List") + '</h2>')
+    A('    <p class="lede lang-en" style="font-size:15px">Grouped by the language a book was '
+      '<em>written</em> in. Almost all of them I read in Chinese translation.</p>')
+    A('    <p class="lede lang-zh zh-text" style="font-size:15px">按作品的<em>写作语言</em>分类。'
+      '除英语原著外，均读的中译本。</p>')
     A('    <div class="shelf">')
     for key, zh_h, en_h in GROUPS:
         rows = [b for b in books if b[0] == key]
