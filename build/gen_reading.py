@@ -4,10 +4,20 @@
 Usage:  python3 build/gen_reading.py       (from the homepage/ directory, or anywhere)
 Edit ROWS / NOBEL below to add books; edit quotes_full.json to add excerpts.
 """
-import json, html, pathlib
+import json, html, pathlib, hashlib
 
 HERE = pathlib.Path(__file__).resolve().parent
 SITE = HERE.parent
+
+
+def _asset_ver():
+    """Short content hash of the stylesheets, used to bust browser caches."""
+    h = hashlib.md5()
+    for name in ("style.css", "reading.css"):
+        p = SITE / "assets" / name
+        if p.exists():
+            h.update(p.read_bytes())
+    return h.hexdigest()[:8]
 
 # group key -> (zh heading, en heading)
 GROUPS = [
@@ -211,8 +221,9 @@ def build():
     A('<title>Reading — Jingchu Gai</title>')
     A('<meta name="description" content="A record of what I have read, and passages worth keeping. 读书记录与摘抄。">')
     A("<link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>\">")
-    A('<link rel="stylesheet" href="assets/style.css">')
-    A('<link rel="stylesheet" href="assets/reading.css">')
+    _v = _asset_ver()
+    A(f'<link rel="stylesheet" href="assets/style.css?v={_v}">')
+    A(f'<link rel="stylesheet" href="assets/reading.css?v={_v}">')
     A('</head>')
     A('<body>')
     A('<div class="wrap">')
@@ -295,21 +306,34 @@ def build():
     quotes = json.load(open(HERE / "quotes_full.json"))
     A('  <section id="excerpts">')
     A('    <h2>' + L("摘抄", "Excerpts") + '</h2>')
-    A('    <p class="lede lang-en" style="font-size:15px">Click a title to read the passage. '
+    A('    <p class="lede lang-en" style="font-size:15px">Click a title to read the passage; '
+      'the longer ones open on their own page. '
       'Works written in English are quoted from the published original; everything else is a '
       'rendering of the Chinese translation I read.</p>')
-    A('    <p class="lede lang-zh zh-text" style="font-size:15px">点击书名展开段落。'
+    A('    <p class="lede lang-zh zh-text" style="font-size:15px">点击书名展开段落；'
+      '较长的篇章会另开一页。'
       '英语原著引自出版原文；其余均据我所读的中译本转译成英文。</p>')
     A('    <div class="quotes">')
     for q in quotes:
         is_orig = q["source"] == "original"
-        A('      <details>')
-        A('        <summary>')
-        A('          <span class="qt">' + L("《" + q["zh_title"] + "》", q["en_title"]) + '</span>')
-        A('          <span class="qa">' + L(q["zh_author"], q["en_author"]) + '</span>')
         prov_cls = "prov orig-text" if is_orig else "prov"
         prov = L("原文" if is_orig else "转译", "original" if is_orig else "rendering")
-        A(f'          <span class="{prov_cls}">{prov}</span>')
+        title  = '<span class="qt">' + L("《" + q["zh_title"] + "》", q["en_title"]) + '</span>'
+        author = '<span class="qa">' + L(q["zh_author"], q["en_author"]) + '</span>'
+        badge  = f'<span class="{prov_cls}">{prov}</span>'
+        if q.get("full"):
+            # long passage: the title links straight to its own full-text page
+            A(f'      <a class="qlink" href="passages.html#q{q["i"]}">')
+            A('        ' + title)
+            A('        ' + author)
+            A('        ' + badge)
+            A('      </a>')
+            continue
+        A('      <details>')
+        A('        <summary>')
+        A('          ' + title)
+        A('          ' + author)
+        A('          ' + badge)
         A('        </summary>')
         A('        <blockquote class="lang-zh zh-text">')
         for p in q["zh"]:
@@ -353,7 +377,19 @@ def build():
     A('</div>')
 
     # ---- scripts ----
-    A('''<script>
+    A(SCRIPT)
+    A('</body>')
+    A('</html>')
+
+    out = "\n".join(o)
+    open(SITE / "reading.html", "w").write(out)
+    print(f"books: {len(books)}  nobel: {len(NOBEL)}  quotes: {len(quotes)}  bytes: {len(out)}")
+    for key, zh_h, _ in GROUPS:
+        print(f"  {zh_h}: {len([b for b in books if b[0]==key])}")
+    build_passages(quotes)
+
+
+SCRIPT = '''<script>
 (function () {
   var root = document.documentElement;
 
@@ -394,15 +430,95 @@ def build():
     applyTheme(next);
   });
 })();
-</script>''')
+</script>'''
+
+
+BOOK_ICON = ("<link rel=\"icon\" href=\"data:image/svg+xml,"
+             "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>"
+             "<text y='.9em' font-size='90'>&#128214;</text></svg>\">")
+
+
+def _para_block(A, paras, cls):
+    """Emit a text block, rendering a lone ＊ as a centered section break."""
+    A(f'    <div class="ptext {cls}">')
+    for p in paras:
+        if p.strip() == "＊":
+            A('      <p class="star">＊</p>')
+        else:
+            A('      <p>' + p.replace("\n", "<br>") + '</p>')
+    A('    </div>')
+
+
+def build_passages(quotes):
+    """Full-length text of the long passages linked from reading.html."""
+    full = [q for q in quotes if q.get("full")]
+    o = []
+    A = o.append
+    A('<!DOCTYPE html>')
+    A('<html lang="en" data-lang="en">')
+    A('<head>')
+    A('<meta charset="utf-8">')
+    A('<meta name="viewport" content="width=device-width, initial-scale=1">')
+    A('<title>' + '全文摘录 · Full Passages — Jingchu Gai' + '</title>')
+    A('<meta name="description" content="Full-length excerpts copied out from my reading.">')
+    A(BOOK_ICON)
+    _v = _asset_ver()
+    A(f'<link rel="stylesheet" href="assets/style.css?v={_v}">')
+    A(f'<link rel="stylesheet" href="assets/reading.css?v={_v}">')
+    A('</head>')
+    A('<body>')
+    A('<div class="wrap wrap-wide">')
+
+    A('  <nav class="pnav">')
+    A('    <a href="reading.html">&larr; ' + L("读书", "reading") + '</a>')
+    A('    <a href="index.html">' + L("主页", "home") + '</a>')
+    A('    <span class="spacer"></span>')
+    A('    <span class="langswitch">')
+    A('      <button type="button" data-lang="en">EN</button>')
+    A('      <button type="button" data-lang="zh">中文</button>')
+    A('    </span>')
+    A('    <button id="theme" type="button" aria-label="Toggle color theme">&#9790;</button>')
+    A('  </nav>')
+
+    A('  <header style="margin-top:34px">')
+    A('    <h1 class="page-title">' + L("全文摘录", "Full Passages") + '</h1>')
+    A('    <p class="lede lang-en">The complete text of the longer passages linked from the '
+      'reading page — the Chinese translation I read, with the English (the original where '
+      'the work was written in English, otherwise a published translation).</p>')
+    A('    <p class="lede lang-zh zh-text">这是读书页中较长篇'
+      '段的完整正文——我所读的中译本'
+      '，附英文（英语原著为原文，其余'
+      '为出版译文）。</p>')
+    A('  </header>')
+
+    for q in full:
+        is_orig = q["source"] == "original"
+        A(f'  <section class="passage" id="q{q["i"]}">')
+        prov_cls = "prov orig-text" if is_orig else "prov"
+        prov = L("原文" if is_orig else "转译",
+                 "original" if is_orig else "rendering")
+        A('    <h2 class="ptitle">' + L("《" + q["zh_title"] + "》", q["en_title"])
+          + f'<span class="{prov_cls}">{prov}</span></h2>')
+        A('    <p class="pauthor">' + L(q["zh_author"], q["en_author"]) + '</p>')
+        _para_block(A, q["full"]["zh"], "lang-zh zh-text")
+        _para_block(A, q["full"]["en"], "lang-en")
+        if q.get("orig"):
+            A(f'    <div class="orig"><em>{q["orig_label"]}:</em> {q["orig"]}</div>')
+        A('    <p class="pback"><a href="reading.html#excerpts">&uarr; '
+          + L("返回摘抄", "back to excerpts") + '</a></p>')
+        A('  </section>')
+
+    A('  <footer>')
+    A('    <a href="reading.html">' + L("返回读书页", "Back to reading") + '</a>')
+    A('    <a href="mailto:jgai@andrew.cmu.edu">jgai@andrew.cmu.edu</a>')
+    A('  </footer>')
+    A('</div>')
+    A(SCRIPT)
     A('</body>')
     A('</html>')
 
-    out = "\n".join(o)
-    open(SITE / "reading.html", "w").write(out)
-    print(f"books: {len(books)}  nobel: {len(NOBEL)}  quotes: {len(quotes)}  bytes: {len(out)}")
-    for key, zh_h, _ in GROUPS:
-        print(f"  {zh_h}: {len([b for b in books if b[0]==key])}")
+    open(SITE / "passages.html", "w").write("\n".join(o))
+    print(f"passages.html: {len(full)} full passages")
 
 
 build()

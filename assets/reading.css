@@ -79,6 +79,58 @@
 }
 .orig em { font-style: normal; color: var(--faint); }
 
+/* long passages: same row as a collapsed excerpt, but the title links out */
+.quotes > a.qlink {
+  border-bottom: 1px solid var(--rule);
+  text-decoration: none; color: inherit; cursor: pointer;
+  position: relative; padding: 13px 30px 13px 0;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px;
+}
+.quotes > a.qlink::after {
+  content: ""; position: absolute; right: 6px; top: 19px;
+  width: 7px; height: 7px;
+  border-right: 1.6px solid var(--faint); border-bottom: 1.6px solid var(--faint);
+  transform: rotate(45deg); transition: transform .2s ease, border-color .2s ease;
+}
+.quotes > a.qlink:hover::after { border-color: var(--accent); }
+.quotes > a.qlink:hover .qt { color: var(--accent); }
+
+/* ---- full-passage page (passages.html) ---- */
+.pnav {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 4px 18px;
+  padding-top: 26px;
+  font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, sans-serif;
+  font-size: 14px;
+}
+.pnav > a { color: var(--muted); border: none; }
+.pnav > a:hover { color: var(--accent); }
+.pnav .spacer { flex: 1 1 auto; }
+/* the full-passage page runs wide — text fills the page instead of a narrow column */
+.wrap-wide { max-width: 1500px; }
+.passage {
+  margin-top: 46px; padding-top: 22px; border-top: 1px solid var(--rule);
+  scroll-margin-top: 20px;
+}
+.passage:first-of-type { border-top: none; }
+.ptitle {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 12px;
+  font-size: 21px; font-weight: 600; letter-spacing: -.01em; margin: 0 0 2px;
+}
+.pauthor {
+  font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, sans-serif;
+  font-size: 14px; color: var(--muted); margin: 0 0 16px;
+}
+.ptext { max-width: none; margin: 0 0 4px; }
+.ptext p { margin: 0 0 14px; }
+.ptext.zh-text p { text-indent: 2em; }
+.ptext .star { text-align: center; text-indent: 0; color: var(--faint); margin: 6px 0 16px; }
+.pback {
+  font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, sans-serif;
+  font-size: 13px; margin: 4px 0 0;
+}
+.pback a { color: var(--faint); border: none; }
+.pback a:hover { color: var(--accent); }
+
 /* ---- book list ---- */
 .shelf { margin-top: 6px; }
 .shelf > details {
