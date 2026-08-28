@@ -32,6 +32,19 @@
 }
 
 /* ---- excerpts: collapsed to a title, expand for the passage ---- */
+.qgroup {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 30px 0 2px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+.qgroup:first-of-type { margin-top: 14px; }
+.qgroup .n { color: var(--faint); margin-left: 8px; font-weight: 400; }
+.lang-zh .qgroup, :root[data-lang="zh"] .qgroup { letter-spacing: .04em; }
 .quotes { margin: 0; padding: 0; }
 .quotes > details { border-bottom: 1px solid var(--rule); }
 .quotes > details > summary {

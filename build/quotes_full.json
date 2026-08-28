@@ -13,7 +13,8 @@
   "zh_title": "卡拉马佐夫兄弟",
   "en_title": "The Brothers Karamazov",
   "zh_author": "陀思妥耶夫斯基",
-  "en_author": "Fyodor Dostoevsky"
+  "en_author": "Fyodor Dostoevsky",
+  "lang": "ru"
  },
  {
   "i": 1,
@@ -27,7 +28,8 @@
   "zh_title": "南方与北方",
   "en_title": "North and South",
   "zh_author": "伊丽莎白·盖斯凯尔",
-  "en_author": "Elizabeth Gaskell"
+  "en_author": "Elizabeth Gaskell",
+  "lang": "en"
  },
  {
   "i": 2,
@@ -49,7 +51,8 @@
   "zh_title": "人性的枷锁",
   "en_title": "Of Human Bondage",
   "zh_author": "毛姆",
-  "en_author": "W. Somerset Maugham"
+  "en_author": "W. Somerset Maugham",
+  "lang": "en"
  },
  {
   "i": 3,
@@ -67,7 +70,8 @@
   "zh_author": "显克维奇",
   "en_author": "Henryk Sienkiewicz",
   "orig": "Domine, quo vadis?",
-  "orig_label": "Latin"
+  "orig_label": "Latin",
+  "lang": "pl"
  },
  {
   "i": 4,
@@ -81,7 +85,8 @@
   "zh_title": "面纱",
   "en_title": "The Painted Veil",
   "zh_author": "毛姆",
-  "en_author": "W. Somerset Maugham"
+  "en_author": "W. Somerset Maugham",
+  "lang": "en"
  },
  {
   "i": 5,
@@ -99,7 +104,8 @@
   "zh_title": "罗密欧与朱丽叶",
   "en_title": "Romeo and Juliet",
   "zh_author": "莎士比亚",
-  "en_author": "William Shakespeare"
+  "en_author": "William Shakespeare",
+  "lang": "en"
  },
  {
   "i": 6,
@@ -113,7 +119,8 @@
   "zh_title": "哈姆雷特",
   "en_title": "Hamlet",
   "zh_author": "莎士比亚",
-  "en_author": "William Shakespeare"
+  "en_author": "William Shakespeare",
+  "lang": "en"
  },
  {
   "i": 8,
@@ -127,7 +134,8 @@
   "zh_title": "查理十二世的人马",
   "en_title": "The Charles Men",
   "zh_author": "海顿斯坦姆",
-  "en_author": "Verner von Heidenstam"
+  "en_author": "Verner von Heidenstam",
+  "lang": "sv"
  },
  {
   "i": 9,
@@ -151,7 +159,8 @@
   "zh_author": "索尔仁尼琴",
   "en_author": "Aleksandr Solzhenitsyn",
   "orig": "Кого позвать мне? С кем мне поделиться\nТой грустной радостью, что я остался жив?",
-  "orig_label": "Russian original (Sergei Yesenin, \"Soviet Russia\")"
+  "orig_label": "Russian original (Sergei Yesenin, \"Soviet Russia\")",
+  "lang": "ru"
  },
  {
   "i": 10,
@@ -165,7 +174,8 @@
   "zh_title": "海浪",
   "en_title": "The Waves",
   "zh_author": "弗吉尼亚·伍尔夫",
-  "en_author": "Virginia Woolf"
+  "en_author": "Virginia Woolf",
+  "lang": "en"
  },
  {
   "i": 11,
@@ -181,7 +191,8 @@
   "zh_author": "泰戈尔",
   "en_author": "Rabindranath Tagore",
   "orig": "আমিও তোমাদের বয়সে একদিন বাধন কেটে তরী ভাসিয়েছিলাম— ঝড়ঝাপটার দিকে তাকাই নি, কারো মানা শুনি নি। আজও তার জন্য অনুতাপ করি নে। যদি বা অনুতাপের কারণ ঘটত তাতেই বা কী? মানুষ ভুল করবে, ঠকবে, ভাববে, কিন্তু সবার উপরে হচ্ছে— মানুষ চলৰে। যে কাজটা সত্য তাকে সম্পূর্ণ করার জন্যেই জীবন, সে জীবন গেলে বা থাকে তাতে কী? সমাজের প্রবাহকে সচল রাখলে তবেই তার জল শোধিত হয়ে থাকে— তাতে মাঝে মাঝে তটভঙ্গ হয়, ঘরবাড়ি ভাসে, কিন্তু স্রোতকে বন্ধ করে সমাজকে নিরাপদ করতে গেলেই তাকে মেরে ফেলা হয়।",
-  "orig_label": "Bengali original"
+  "orig_label": "Bengali original",
+  "lang": "bn"
  },
  {
   "i": 12,
@@ -197,7 +208,8 @@
   "zh_title": "戈拉",
   "en_title": "Gora",
   "zh_author": "泰戈尔",
-  "en_author": "Rabindranath Tagore"
+  "en_author": "Rabindranath Tagore",
+  "lang": "bn"
  },
  {
   "i": 14,
@@ -211,7 +223,8 @@
   "zh_title": "劝导",
   "en_title": "Persuasion",
   "zh_author": "简·奥斯汀",
-  "en_author": "Jane Austen"
+  "en_author": "Jane Austen",
+  "lang": "en"
  },
  {
   "i": 15,
@@ -225,7 +238,8 @@
   "zh_title": "魔山",
   "en_title": "The Magic Mountain",
   "zh_author": "托马斯·曼",
-  "en_author": "Thomas Mann"
+  "en_author": "Thomas Mann",
+  "lang": "de"
  },
  {
   "i": 16,
@@ -239,7 +253,8 @@
   "zh_title": "一位女士的画像",
   "en_title": "The Portrait of a Lady",
   "zh_author": "亨利·詹姆斯",
-  "en_author": "Henry James"
+  "en_author": "Henry James",
+  "lang": "en"
  },
  {
   "i": 17,
@@ -257,7 +272,8 @@
   "zh_title": "一位女士的画像",
   "en_title": "The Portrait of a Lady",
   "zh_author": "亨利·詹姆斯",
-  "en_author": "Henry James"
+  "en_author": "Henry James",
+  "lang": "en"
  },
  {
   "i": 18,
@@ -271,7 +287,8 @@
   "zh_title": "幸运儿彼尔",
   "en_title": "Lucky Per",
   "zh_author": "彭托皮丹",
-  "en_author": "Henrik Pontoppidan"
+  "en_author": "Henrik Pontoppidan",
+  "lang": "da"
  },
  {
   "i": 19,
@@ -289,7 +306,8 @@
   "zh_title": "幸运儿彼尔",
   "en_title": "Lucky Per",
   "zh_author": "彭托皮丹",
-  "en_author": "Henrik Pontoppidan"
+  "en_author": "Henrik Pontoppidan",
+  "lang": "da"
  },
  {
   "i": 20,
@@ -309,7 +327,8 @@
   "zh_title": "幸运儿彼尔",
   "en_title": "Lucky Per",
   "zh_author": "彭托皮丹",
-  "en_author": "Henrik Pontoppidan"
+  "en_author": "Henrik Pontoppidan",
+  "lang": "da"
  },
  {
   "i": 21,
@@ -323,7 +342,8 @@
   "zh_title": "幸运儿彼尔",
   "en_title": "Lucky Per",
   "zh_author": "彭托皮丹",
-  "en_author": "Henrik Pontoppidan"
+  "en_author": "Henrik Pontoppidan",
+  "lang": "da"
  },
  {
   "i": 22,
@@ -337,7 +357,8 @@
   "zh_title": "古拉格群岛",
   "en_title": "The Gulag Archipelago",
   "zh_author": "索尔仁尼琴",
-  "en_author": "Aleksandr Solzhenitsyn"
+  "en_author": "Aleksandr Solzhenitsyn",
+  "lang": "ru"
  },
  {
   "i": 23,
@@ -351,7 +372,8 @@
   "zh_title": "儿子与情人",
   "en_title": "Sons and Lovers",
   "zh_author": "劳伦斯",
-  "en_author": "D. H. Lawrence"
+  "en_author": "D. H. Lawrence",
+  "lang": "en"
  },
  {
   "i": 24,
@@ -367,7 +389,8 @@
   "zh_title": "忏悔录",
   "en_title": "Confessions",
   "zh_author": "让-雅克·卢梭",
-  "en_author": "Jean-Jacques Rousseau"
+  "en_author": "Jean-Jacques Rousseau",
+  "lang": "fr"
  },
  {
   "i": 25,
@@ -381,7 +404,8 @@
   "zh_title": "古拉格群岛",
   "en_title": "The Gulag Archipelago",
   "zh_author": "索尔仁尼琴",
-  "en_author": "Aleksandr Solzhenitsyn"
+  "en_author": "Aleksandr Solzhenitsyn",
+  "lang": "ru"
  },
  {
   "i": 26,
@@ -398,12 +422,13 @@
    "\"I am the day that is about to be born.\""
   ],
   "source": "rendering",
-  "zh_title": "约翰·克里斯朵夫",
+  "zh_title": "约翰·克利斯朵夫",
   "en_title": "Jean-Christophe",
   "zh_author": "罗曼·罗兰",
   "en_author": "Romain Rolland",
   "orig": "Je suis le jour qui va naître.",
-  "orig_label": "French original"
+  "orig_label": "French original",
+  "lang": "fr"
  },
  {
   "i": 27,
@@ -417,7 +442,8 @@
   "zh_title": "千只鹤",
   "en_title": "Thousand Cranes",
   "zh_author": "川端康成",
-  "en_author": "Yasunari Kawabata"
+  "en_author": "Yasunari Kawabata",
+  "lang": "jp"
  },
  {
   "i": 28,
@@ -447,7 +473,8 @@
     "＊",
     "He laid the letter down from his trembling hands. Then he pondered a long while. Confusedly some memory rose up — of a neighbour's child, of a girl, of a woman in a night-café; but a memory dim and confused, as a stone shimmers and quivers formlessly at the bottom of running water. Shadows streamed toward him and away, but no image formed. He felt memories of feeling, and yet did not remember. It seemed to him as though he had dreamed of all these figures, often and deeply dreamed, and yet only dreamed. Then his glance fell on the blue vase before him on the writing-desk. It was empty, for the first time in years empty on his birthday. He started: it seemed to him as if a door had suddenly, invisibly sprung open, and a cold draught from another world were streaming into his tranquil room. He sensed a death, and sensed undying love: something broke open within his soul, and he thought of the invisible woman, bodiless and passionate, as of distant music."
    ]
-  }
+  },
+  "lang": "de"
  },
  {
   "i": 29,
@@ -529,7 +556,8 @@
     "Only a rending cry reached the ears of the onlookers: \"Jesus!\"--then Rotgier retreated one more step and fell upon his back on the ground. Immediately there was a noise and buzz on the porches, as in a bee-garden in which the bees, warmed by the sun, commence to move and swarm. The knights ran down the stairs in whole throngs, the servants jumped over the snow-walls, to take a look at the corpses. Everywhere resounded the shouts: \"This is God's judgment ... Jurand has an heir! Glory to him and thanksgiving! This is a man for the axe!\" Others again cried: \"Look and marvel! Jurand himself could not strike more nobly.\" A whole group of curious ones stood around Rotgier's corpse, and he lay on his back with a face as white as snow, with gaping mouth and with a bloody arm so terribly shorn from the neck down to the armpit, that it scarcely held by a few shreds.",
     "Therefore, others again said: \"He was alive just now and walked upon the earth with arrogance, but now he cannot even move a finger.\" And thus speaking, some admired his stature, because he took up a large space on the battlefield, and appeared even larger in death; others again admired his peacock plume, changing colors beautifully in the snow; others again his armor, which was valued at a good village. But the Bohemian, Hlawa, now approached with two of Zbyszko's retainers in order to take it off from the deceased, therefore the curious surrounded Zbyszko, praising and extolling him to the skies, because they justly thought that his fame would redound to the credit of the whole Mazovian and Polish knighthood. Meanwhile the shield and axe were taken from him, to lighten his burden, and Mrokota of Mocarzew unbuckled his helmet and covered his hair, wet with perspiration, with a cap of scarlet cloth."
    ]
-  }
+  },
+  "lang": "pl"
  },
  {
   "i": 30,
@@ -582,7 +610,8 @@
     "“Oh, I know, I know that heart, that wild but grateful heart, gentlemen of the jury! It will bow before your mercy; it thirsts for a great and loving action, it will melt and mount upwards. There are souls which, in their limitation, blame the whole world. But subdue such a soul with mercy, show it love, and it will curse its past, for there are many good impulses in it. Such a heart will expand and see that God is merciful and that men are good and just. He will be horror-stricken; he will be crushed by remorse and the vast obligation laid upon him henceforth. And he will not say then, ‘I am quits,’ but will say, ‘I am guilty in the sight of all men and am more unworthy than all.’ With tears of penitence and poignant, tender anguish, he will exclaim: ‘Others are better than I, they wanted to save me, not to ruin me!’ Oh, this act of mercy is so easy for you, for in the absence of anything like real evidence it will be too awful for you to pronounce: ‘Yes, he is guilty.’",
     "“Better acquit ten guilty men than punish one innocent man! Do you hear, do you hear that majestic voice from the past century of our glorious history? It is not for an insignificant person like me to remind you that the Russian court does not exist for the punishment only, but also for the salvation of the criminal! Let other nations think of retribution and the letter of the law, we will cling to the spirit and the meaning—the salvation and the reformation of the lost. If this is true, if Russia and her justice are such, she may go forward with good cheer! Do not try to scare us with your frenzied troikas from which all the nations stand aside in disgust. Not a runaway troika, but the stately chariot of Russia will move calmly and majestically to its goal. In your hands is the fate of my client, in your hands is the fate of Russian justice. You will defend it, you will save it, you will prove that there are men to watch over it, that it is in good hands!”"
    ]
-  }
+  },
+  "lang": "ru"
  },
  {
   "i": 31,
@@ -612,6 +641,288 @@
     "And to witness the passing of this Age, London—its pet and fancy—was pouring forth her citizens through every gate into Hyde Park, hub of Victorianism, happy hunting-ground of Forsytes. Under the grey heavens, whose drizzle just kept off, the dark concourse gathered to see the show. The “good old” Queen, full of years and virtue, had emerged from her seclusion for the last time to make a London holiday. From Houndsditch, Acton, Ealing, Hampstead, Islington, and Bethnal Green; from Hackney, Hornsey, Leytonstone, Battersea, and Fulham; and from those green pastures where Forsytes flourish—Mayfair and Kensington, St. James’ and Belgravia, Bayswater and Chelsea and the Regent’s Park, the people swarmed down on to the roads where death would presently pass with dusky pomp and pageantry. Never again would a Queen reign so long, or people have a chance to see so much history buried for their money. A pity the war dragged on, and that the Wreath of Victory could not be laid upon her coffin! All else would be there to follow and commemorate—soldiers, sailors, foreign princes, half-masted bunting, tolling bells, and above all the surging, great, dark-coated crowd, with perhaps a simple sadness here and there deep in hearts beneath black clothes put on by regulation. After all, more than a Queen was going to her rest, a woman who had braved sorrow, lived well and wisely according to her lights.",
     "Out in the crowd against the railings, with his arm hooked in Annette’s, Soames waited. Yes! the Age was passing!"
    ]
+  },
+  "lang": "en"
+ },
+ {
+  "i": 32,
+  "zh": [
+   "玛格丽特凭直觉感到，转瞬之间一切就会失控；只要一触即发，在这数百个怒火中烧的男人和不计后果的少年之中，就连桑顿先生的性命也将危在旦夕——再过一刻，狂暴的激情便会冲破一切界限，扫除所有理智的屏障和对后果的顾虑。就在她注视之际，她看见后面的少年们弯腰脱下沉重的木屐——那是他们最趁手的投掷物；她知道这是即将点燃火药桶的火星。她发出一声无人听见的呼喊，冲出房间，奔下楼梯——她以不可抗拒的力量举起门上沉重的铁闩——将大门敞开——她就那样站在了那片愤怒的人海面前，目光如燃烧的箭矢般射向他们，满含责备。"
+  ],
+  "en": [
+   "Margaret felt intuitively, that in an instant all would be uproar; the first touch would cause an explosion, in which, among such hundreds of infuriated men and reckless boys, even Mr. Thornton’s life would be unsafe,—that in another instant the stormy passions would have passed their bounds, and swept away all barriers of reason, or apprehension of consequence. Even while she looked, she saw lads in the background stooping to take off their heavy wooden clogs—the readiest missile they could find; she saw it was the spark to the gunpowder, and, with a cry, which no one heard, she rushed out of the room, down stairs,—she had lifted the great iron bar of the door with an imperious force—had thrown the door open wide—and was there, in face of that angry sea of men, her eyes smiting them with flaming arrows of reproach."
+  ],
+  "source": "original",
+  "full": {
+   "zh": [
+    "玛格丽特凭直觉感到，转瞬之间一切就会失控；只要一触即发，在这数百个怒火中烧的男人和不计后果的少年之中，就连桑顿先生的性命也将危在旦夕——再过一刻，狂暴的激情便会冲破一切界限，扫除所有理智的屏障和对后果的顾虑。就在她注视之际，她看见后面的少年们弯腰脱下沉重的木屐——那是他们最趁手的投掷物；她知道这是即将点燃火药桶的火星。她发出一声无人听见的呼喊，冲出房间，奔下楼梯——她以不可抗拒的力量举起门上沉重的铁闩——将大门敞开——她就那样站在了那片愤怒的人海面前，目光如燃烧的箭矢般射向他们，满含责备。",
+    "木屐在握着它们的手中停住了——方才还满是凶戾的面孔，此刻变得犹豫不决，仿佛在追问这意味着什么。因为她站在了他们和他们的敌人之间。她说不出话来，只是向他们伸出双臂，直到她缓过气来。",
+    "\"噢，不要使用暴力！他只有一个人，而你们有这么多人——\"但她的话语渐渐消散，因为她的嗓音已无力发声，只剩下沙哑的低语。桑顿先生稍稍站到一侧；他从她身后移开了，仿佛不愿让任何东西挡在他和危险之间。",
+    "\"走！\"她再次喊道（此刻她的声音已如呼号）。\"已经派人去叫士兵了——他们正在赶来。和平地离开吧。走吧。不管你们有什么不满，都会得到解决的。\"",
+    "\"那些爱尔兰混蛋会被赶走吗？\"人群中有人问道，声音里带着凶狠的威胁。",
+    "\"绝不会，休想凭你们来命令我！\"桑顿先生厉声说道。风暴顿时爆发了。",
+    "嘘声四起，充斥了整个天空——但玛格丽特充耳不闻。她的目光紧盯着那群早已将木屐握在手中的少年。她看见了他们的动作——她明白那意味着什么——她读懂了他们的目标。再过一瞬，桑顿先生就可能被击倒——正是她催促、激励他来到这个危险之地的。她满脑子只想着如何救他。她伸出双臂搂住了他；她用自己的身体筑成一道屏障，挡在他和凶暴的人群之间。然而，他依然双臂交叉，将她推开。",
+    "\"走开，\"他用低沉的声音说道，\"这里不是你待的地方。\"",
+    "\"这里正是！\"她说，\"你没有看到我看到的。\"",
+    "一只木屐呼啸着飞过空中。玛格丽特的眼睛不由自主地追随着它的轨迹；它偏离了目标，她吓得一阵恶心，但没有改变自己的位置，只是将脸埋在桑顿先生的臂弯里。然后她转过身来，再次开口：",
+    "\"看在上帝的份上！不要因为暴力毁了你们的事业。你们不知道自己在做什么。\"",
+    "一颗尖锐的石子飞来，擦过她的额头和脸颊，一片刺目的白光在她眼前闪过。她如同死去一般倒在桑顿先生的肩上。他这才展开双臂，用一只手臂将她环抱了片刻：",
+    "\"你们做得好啊！\"他说。\"你们来驱赶无辜的外乡人。你们这几百号人——围攻一个人；而当一个女人站到你们面前，为了你们自己的利益请求你们做通情达理的人时，你们怯懦的怒火竟落在了她身上！你们做得真好啊！\"",
+    "他说话时，他们静默无声。他们瞪大眼睛、张着嘴巴，注视着那一缕暗红的血线——那血线将他们从疯狂的迷醉中唤醒。最靠近大门的人羞愧地溜了出去；整个人群中出现了一阵骚动——一阵后退的骚动。只有一个声音喊道：",
+    "\"那石头本是要砸你的；可你躲在一个女人后面！\"",
+    "桑顿先生气得浑身发颤。流血使玛格丽特恢复了意识——模糊的、朦胧的意识。他轻轻地将她放在门阶上，让她的头靠着门框。",
+    "\"你能在这里歇一下吗？\"他问道。但没有等她回答，他便缓步走下台阶，径直走入人群正中。\"来杀我吧，如果这是你们野蛮的意愿。这里没有女人为我挡着了。你们可以把我打死——但你们永远也不能让我改变我的决定——你们不能！\"",
+    "他站在他们中间，双臂交叉，姿态与他站在台阶上时一模一样。",
+    "但向大门退去的浪潮已经开始了——同样地不讲道理，也许同样地盲目，一如方才那一齐迸发的怒火。又或许，是士兵将至的念头，是那张苍白的、仰起的脸——双目紧闭，静穆而哀伤，宛如大理石，纵然泪水从长长纠缠的睫毛间涌出、滴落；而比泪水更沉重、更迟缓地溅落下来的，是从她伤口渗出的血。就连最不顾死活的人——布彻本人——也退缩了，踉踉跄跄地退开，皱着眉，最终走了，口里咒骂着那位厂主；而厂主依旧一动不动地站着，以挑衅的目光目送他们退去。就在那退却化为溃逃的一刻（以其本性而言，这原是必然的），他一个箭步冲上台阶，奔向玛格丽特。",
+    "她想不靠他的搀扶，自己站起来。",
+    "“没什么，”她说，勉强露出一丝病态的微笑。“只是擦破了点皮，我一时被震晕了。噢，他们走了，真是谢天谢地！”说着，她便不加克制地哭了起来。",
+    "他无法对她生出同情。他的怒气并未平息；相反，随着眼前危险的消退，那怒气反倒愈发高涨。远处传来了士兵铿锵的脚步声：偏偏迟了五分钟，没能让这群作鸟兽散的暴民领教到权威与秩序的力量。他倒巴望他们撞见军队，好在念及自己侥幸脱险时被震慑住。正当这些念头掠过他心头，玛格丽特扶住门柱想稳住身子：可一层薄翳蒙上了她的双眼——他堪堪及时将她接住。“母亲——母亲！”他喊道，“快下来——他们走了，黑尔小姐受伤了！”他将她抱进餐厅，轻轻放在那里的沙发上；轻轻地放下她，望着她那纯净而苍白的脸，她对他意味着什么——这份感触如此强烈地攫住了他，令他在痛楚中脱口而出：",
+    "“噢，我的玛格丽特——我的玛格丽特！没有人知道你对我意味着什么！你冰冷地躺在这里，宛如死去——你是我唯一爱过的女人！噢，玛格丽特——玛格丽特！”"
+   ],
+   "en": [
+    "Margaret felt intuitively, that in an instant all would be uproar; the first touch would cause an explosion, in which, among such hundreds of infuriated men and reckless boys, even Mr. Thornton’s life would be unsafe,—that in another instant the stormy passions would have passed their bounds, and swept away all barriers of reason, or apprehension of consequence. Even while she looked, she saw lads in the background stooping to take off their heavy wooden clogs—the readiest missile they could find; she saw it was the spark to the gunpowder, and, with a cry, which no one heard, she rushed out of the room, down stairs,—she had lifted the great iron bar of the door with an imperious force—had thrown the door open wide—and was there, in face of that angry sea of men, her eyes smiting them with flaming arrows of reproach.",
+    "The clogs were arrested in the hands that held them — the countenances, so fell not a moment before, now looked irresolute, and as if asking what this meant. For she stood between them and their enemy. She could not speak, but held out her arms towards them till she could recover breath.",
+    "'Oh, do not use violence! He is one man, and you are many;' but her words died away, for there was no tone in her voice; it was but a hoarse whisper. Mr. Thornton stood a little on one side; he had moved away from behind her, as if jealous of anything that should come between him and danger.",
+    "'Go!' said she, once more (and now her voice was like a cry). 'The soldiers are sent for — are coming. Go peaceably. Go away. You shall have relief from your complaints, whatever they are.'",
+    "'Shall them Irish blackguards be packed back again?' asked one from out the crowd, with fierce threatening in his voice.",
+    "'Never, for your bidding!' exclaimed Mr. Thornton. And instantly the storm broke.",
+    "The hootings rose and filled the air, — but Margaret did not hear them. Her eye was on the group of lads who had armed themselves with their clogs some time before. She saw their gesture — she knew its meaning, — she read their aim. Another moment, and Mr. Thornton might be smitten down, — he whom she had urged and goaded to come to this perilous place. She only thought how she could save him. She threw her arms around him; she made her body into a shield from the fierce people beyond. Still, with his arms folded, he shook her off.",
+    "'Go away,' said he, in his deep voice. 'This is no place for you.'",
+    "'It is!' said she. 'You did not see what I saw.'",
+    "A clog whizzed through the air. Margaret's fascinated eyes watched its progress; it missed its aim, and she turned sick with affright, but changed not her position, only hid her face on Mr. Thornton's arm. Then she turned and spoke again:",
+    "'For God's sake! do not damage your cause by this violence. You do not know what you are doing.'",
+    "A sharp pebble flew by her, grazing forehead and cheek, and drawing a blinding sheet of light before her eyes. She lay like one dead on Mr. Thornton's shoulder. Then he unfolded his arms, and held her encircled in one for an instant:",
+    "'You do well!' said he. 'You come to oust the innocent stranger. You fall — you hundreds — on one man; and when a woman comes before you, to ask you for your own sakes to be reasonable creatures, your cowardly wrath falls upon her! You do well!'",
+    "They were silent while he spoke. They were watching, open-eyed and open-mouthed, the thread of dark-red blood which wakened them up from their trance of passion. Those nearest the gate stole out ashamed; there was a movement through all the crowd — a retreating movement. Only one voice cried out:",
+    "'Th' stone were meant for thee; but thou wert sheltered behind a woman!'",
+    "Mr. Thornton quivered with rage. The blood-flowing had made Margaret conscious — dimly, vaguely conscious. He placed her gently on the door-step, her head leaning against the frame.",
+    "'Can you rest there?' he asked. But without waiting for her answer, he went slowly down the steps right into the middle of the crowd. 'Now kill me, if it is your brutal will. There is no woman to shield me here. You may beat me to death — you will never move me from what I have determined upon — not you!'",
+    "He stood amongst them, with his arms folded, in precisely the same attitude as he had been in on the steps.",
+    "But the retrograde movement towards the gate had begun—as unreasoningly, perhaps as blindly, as the simultaneous anger. Or, perhaps, the idea of the approach of the soldiers, and the sight of that pale, upturned face, with closed eyes, still and sad as marble, though the tears welled out of the long entanglement of eyelashes, and dropped down; and, heavier, slower plash than even tears, came the drip of blood from her wound. Even the most desperate—Boucher himself—drew back, faltered away, scowled, and finally went off, muttering curses on the master, who stood in his unchanging attitude, looking after their retreat with defiant eyes. The moment that retreat had changed into a flight (as it was sure from its very character to do), he darted up the steps to Margaret.",
+    "She tried to rise without his help.",
+    "'It is nothing,' she said, with a sickly smile. 'The skin is grazed, and I was stunned at the moment. Oh, I am so thankful they are gone!' And she cried without restraint.",
+    "He could not sympathise with her. His anger had not abated; it was rising the more as his sense of immediate danger was passing away. The distant clank of the soldiers was heard: just five minutes too late to make this vanished mob feel the power of authority and order. He hoped they would see the troops, and be quelled by the thought of their narrow escape. While these thoughts crossed his mind, Margaret clung to the doorpost to steady herself: but a film came over her eyes—he was only just in time to catch her. 'Mother—mother!' cried he; 'Come down—they are gone, and Miss Hale is hurt!' He bore her into the dining-room, and laid her on the sofa there; laid her down softly, and looking on her pure white face, the sense of what she was to him came upon him so keenly that he spoke it out in his pain:",
+    "'Oh, my Margaret—my Margaret! no one can tell what you are to me! Dead—cold as you lie there, you are the only woman I ever loved! Oh, Margaret—Margaret!'"
+   ]
+  },
+  "zh_title": "南方与北方",
+  "en_title": "North and South",
+  "zh_author": "伊丽莎白·盖斯凯尔",
+  "en_author": "Elizabeth Gaskell",
+  "lang": "en"
+ },
+ {
+  "i": 33,
+  "zh": [
+   "双方之间的距离轻易地缩短了。骑士和马匹的身形变得越来越大。双方骑阵之间的一小块遍地衰草、还留有残雪的乡村公共牧场，完全被马蹄吞没了。葛利高里盯上了跑在自己连队前头约有三匹马那么远的一名敌骑。他骑的那匹深褐色高头大马，像狼一样一纵一纵地跑着。这名骑士在空中挥舞着军官用的军刀，镶银的刀鞘在腰间摇晃，直碰马镫，在阳光中闪烁，像阵阵烈焰。转瞬间，葛利高里就认出了这位骑士。这是一个卡尔金斯克的外来户共产党员，名叫彼得·谢米格拉佐夫。一九一七年——那时候还是个二十四岁的小伙子——他打着一副前所未见的裹腿，头一个从德俄战场上跑回家来；同时还带回了对布尔什维克的信仰和在战火中锻炼出来的坚定刚强的性格。是一名坚定的布尔什维克。在红军中服役，在暴动发生前从部队回到镇上来建立苏维埃政权。正是这个谢米格拉佐夫在信心十足地驾驭着战马，姿势优美地挥舞着在搜查时缴获来的专为检阅用的军官马刀。"
+  ],
+  "en": [
+   "The distance between the two sides shortened easily. The figures of horsemen and horses grew larger and larger. The little stretch of common pasture between the two lines of cavalry — all withered grass and patches of unmelted snow — was swallowed up under the hooves. Grigory fixed on one enemy rider galloping some three horse-lengths ahead of his own squadron. The tall dark-bay under him came on in short wolfish bounds. The man was brandishing an officer's sabre in the air; its silver-mounted scabbard swung and knocked against the stirrup, glittering in the sun like bursts of flame. In an instant Grigory knew him. It was a communist from Kargin, one of the incomers — Pyotr Semiglazov. In 1917 — he was a lad of twenty-four then — he had been the first to come home from the German front, in puttees such as no one there had ever seen; and he had brought back with him a faith in Bolshevism and a hard, firm temper forged in the fighting. A staunch Bolshevik he remained. He had served in the Red Army, and before the rising he had come back from his unit to the settlement to set up Soviet power. It was this Semiglazov who now rode down on Grigory, handling his horse with perfect assurance and flourishing, in a fine attitude, the parade officer's sabre he had taken in a search."
+  ],
+  "source": "rendering",
+  "zh_title": "静静的顿河",
+  "en_title": "And Quiet Flows the Don",
+  "zh_author": "肖洛霍夫",
+  "en_author": "Mikhail Sholokhov",
+  "lang": "ru",
+  "full": {
+   "zh": [
+    "双方之间的距离轻易地缩短了。骑士和马匹的身形变得越来越大。双方骑阵之间的一小块遍地衰草、还留有残雪的乡村公共牧场，完全被马蹄吞没了。葛利高里盯上了跑在自己连队前头约有三匹马那么远的一名敌骑。他骑的那匹深褐色高头大马，像狼一样一纵一纵地跑着。这名骑士在空中挥舞着军官用的军刀，镶银的刀鞘在腰间摇晃，直碰马镫，在阳光中闪烁，像阵阵烈焰。转瞬间，葛利高里就认出了这位骑士。这是一个卡尔金斯克的外来户共产党员，名叫彼得·谢米格拉佐夫。一九一七年——那时候还是个二十四岁的小伙子——他打着一副前所未见的裹腿，头一个从德俄战场上跑回家来；同时还带回了对布尔什维克的信仰和在战火中锻炼出来的坚定刚强的性格。是一名坚定的布尔什维克。在红军中服役，在暴动发生前从部队回到镇上来建立苏维埃政权。正是这个谢米格拉佐夫在信心十足地驾驭着战马，姿势优美地挥舞着在搜查时缴获来的专为检阅用的军官马刀。",
+    "葛利高里龇着咬得紧紧的牙齿，抖了抖缰绳，马就听话地加快了速度。",
+    "葛利高里在冲锋的时候，有一种他独具的劈刺方式。当他的听觉和视觉辨认出是一位劲敌的时候，或者是当他要不顾一切，准确地给敌人致命的一击的时候，他就采用这种劈刺方式。葛利高里从小就是左撇子。连拿勺子和画十字都用左手。潘苔莱·普罗珂菲耶维奇为此曾狠揍过他不知多少次，连同年的孩子们都管他叫“左撇子葛利什卡”。打骂大概对年幼的葛利什卡发生了作用。从十岁时候起，他就改掉了用左手代替右手的习惯，“左撇子”这个外号也没人叫了。但是他一直到今天还能用左手做右手能做的一切事情。左手的力气甚至更大些。冲锋时，葛利高里利用这种优势，总是非常奏效。他拨马冲向选准的敌人，通常也跟大家一样，从左边绕过去，以便用右手去砍；而那个即将与葛利高里交手的人，也是这样想法。于是等到离敌人只剩十来沙绳远，而且那个人已经把身子略微倾斜，举起马刀的时候，——这时葛利高里陡然，但不动声色拨马绕到右面，把马刀换到左手里去。沮丧的敌人被迫临时改变姿势，因为从右向左，隔着马头，砍起来很不习惯，就失去了信心，感到情况不妙……葛利高里竭尽全力，拼命砍去，同时使劲把刀往后一带。",
+    "“锅圈儿”教给葛利高里“巴克拉诺夫劈刺法”，已经是很久以前的事了。在两次战争中，葛利高里已经“锻炼”成了高手。掌握马刀劈刺技术可不像扶犁把那样容易。他在劈刺技术上颇有独到之处。"
+   ],
+   "en": [
+    "The distance between the two sides shortened easily. The figures of horsemen and horses grew larger and larger. The little stretch of common pasture between the two lines of cavalry — all withered grass and patches of unmelted snow — was swallowed up under the hooves. Grigory fixed on one enemy rider galloping some three horse-lengths ahead of his own squadron. The tall dark-bay under him came on in short wolfish bounds. The man was brandishing an officer's sabre in the air; its silver-mounted scabbard swung and knocked against the stirrup, glittering in the sun like bursts of flame. In an instant Grigory knew him. It was a communist from Kargin, one of the incomers — Pyotr Semiglazov. In 1917 — he was a lad of twenty-four then — he had been the first to come home from the German front, in puttees such as no one there had ever seen; and he had brought back with him a faith in Bolshevism and a hard, firm temper forged in the fighting. A staunch Bolshevik he remained. He had served in the Red Army, and before the rising he had come back from his unit to the settlement to set up Soviet power. It was this Semiglazov who now rode down on Grigory, handling his horse with perfect assurance and flourishing, in a fine attitude, the parade officer's sabre he had taken in a search.",
+    "Grigory bared his tightly clenched teeth and shook the reins, and the horse obediently quickened its pace.",
+    "In an attack Grigory had a stroke that was his alone. He fell back on it when his ear and his eye told him the man before him was a strong opponent, or when he meant at all costs to strike home and kill with a single blow. From childhood Grigory had been left-handed. He took his spoon with the left hand and crossed himself with it too. Panteley Prokofyevich had beaten him savagely for it more times than could be counted, and the boys of his own age called him “Grishka the left-hander.” The beatings and the scolding must have told on the young Grishka. From his tenth year he broke the habit of putting the left hand for the right, and the nickname died away with it. But to this day he could do with his left everything he could do with his right, and the left was even the stronger. In an attack Grigory turned this to account, always with success. He would ride at the man he had picked out, coming up on the left as everyone does, so as to cut with the right; and the man about to close with him reckoned on the same thing. Then, when some ten fathoms were left between them and the other had already leaned a little to one side and raised his sabre — at that moment Grigory would swing his horse abruptly, but without any show of it, round to the right, and shift the sabre into his left hand. The disconcerted opponent was forced to change his posture on the instant; cutting from right to left, across the horse's head, is awkward, and he lost his confidence and felt that things were going badly with him… Then Grigory struck with all his strength, with everything he had, dragging the blade back hard as it went in.",
+    "It was long ago that “Curly” had taught Grigory the “Baklanov stroke.” In two wars Grigory had broken in his hand. Handling a sabre is not like walking behind a plough. He had come to know a good deal about the art of the cut."
+   ]
   }
+ },
+ {
+  "i": 34,
+  "zh": [
+   "首先，我觉得一切都那么龌龊——精神上的卑鄙龌龊。我根本不是说几十个甚至几百个围在赌台旁边的那些惶惶不安、贪得无厌的人。一心想赢得快些，赢得多些，我根本看不出这样的愿望有什么卑鄙龌龊的地方。可是，当人家辩护说：“不过是小赌而已，”一个饱食终日的道德家却回答说：这样更坏，因为连贪心也很渺小——我总觉得这个道德家的思想很愚蠢。其实，贪心大还是小——还不是一回事。这是个相对而言的问题。罗特希尔德觉得是区区小数，我认为是一笔巨款，至于押注赢钱，人们不光是在轮盘赌台上，而且到处都在互相巧取豪夺。押注赢钱是不是卑鄙——这是另外一个问题。我在这里不打算作解答。由于我自己狂热地一心想赢钱，当我跨进赌场的时候，这种贪婪以及诸如此类的丑恶心理可以说是正中我的下怀。大家不必互相谦让，可以公开地为所欲为，倒也是件痛快的事情。为什么要欺骗自己呢？这是一种无聊透顶、挥霍无度的玩意儿！"
+  ],
+  "en": [
+   "In the first place, it all struck me as so squalid — morally base and squalid. I am not speaking at all of the dozens, even hundreds, of anxious and greedy faces crowded about the gaming tables. I can see nothing base whatever in the wish to win quickly and to win a great deal. But when a well-fed moralist answers the plea “it is only small play, after all” by saying that this is worse, because the greed is petty as well — I have always thought that man's reasoning stupid. As though greed, large or small, were not one and the same thing. It is a question of proportion. What is a trifle to Rothschild is a fortune to me; and as for winnings and spoils, it is not only at the roulette table that people fleece one another — they do it everywhere. Whether winning is base is another question, and I do not undertake to settle it here. Since I was myself possessed by a furious wish to win, all this greed and all this foulness, if you like, suited me well enough as I crossed the threshold. There is nothing pleasanter than not having to stand on ceremony with one another, but to act openly and as one pleases. And indeed, why deceive oneself? It is the idlest and most improvident of occupations!"
+  ],
+  "source": "rendering",
+  "zh_title": "赌徒",
+  "en_title": "The Gambler",
+  "zh_author": "陀思妥耶夫斯基",
+  "en_author": "Fyodor Dostoevsky",
+  "lang": "ru"
+ },
+ {
+  "i": 35,
+  "zh": [
+   "乍一看，这一大帮子玩轮盘赌的赌客围在赌台旁边，对赌博的那种严肃、紧张甚至虔敬的神气是很不雅观的。所以这里就有明显的区别，一种赌博称之为下等赌博，一种赌博是适合上等人玩的。两种赌博：一种是绅士玩的，另一种是下等人玩的，金钱至上，一般赌徒热衷的赌博。这是有严格区别的，可是这种区别实际上是毫无意义的！"
+  ],
+  "en": [
+   "At first sight, this whole crowd of players packed about the tables, with their grave, strained, even reverent air over the play, is not a pretty thing to look at. And so a distinction is drawn here: one sort of gambling is called plebeian gambling, and another is the sort fit for gentlemen. Two kinds of play: the one a gentleman plays, and the one the mob plays, the mercenary sort, the sort your common gambler is greedy for. The distinction is strictly drawn — and how utterly meaningless the distinction really is!"
+  ],
+  "source": "rendering",
+  "zh_title": "赌徒",
+  "en_title": "The Gambler",
+  "zh_author": "陀思妥耶夫斯基",
+  "en_author": "Fyodor Dostoevsky",
+  "lang": "ru"
+ },
+ {
+  "i": 36,
+  "zh": [
+   "这帮人赌起钱来也真下流。我甚至不反对这样的看法：赌场上偷盗的勾当层出不穷，成了司空见惯的事儿。庄家坐在赌桌的两头，注视着赌客押的赌注，计算着赌客赢钱的数目，忙得不可开交。还有这一大帮形形色色的赌客！赌客大部分是法国人。不过，我在这里细细观察，根本不是为了描写轮盘赌。我要使自己适应这样的环境，懂得往后如何行事。比如说，我发现这是最普通不过的事——突然有人从背后伸过手来，把您赢的钱抢走。于是发生争执，往往是大吵大闹——赶紧找人作证，证明赌注是您的！"
+  ],
+  "en": [
+   "And the way these people play is contemptible too. I am not even prepared to argue with the view that thieving at the tables goes on all the time and is taken as a matter of course. The croupiers, sitting at either end of the table, watch the stakes and reckon up the winnings, and they have their hands full. And what a crowd of players, of every sort! Most of them are French. Still, I am observing all this closely not in the least in order to describe roulette. I want to accustom myself to these surroundings and to understand how I am to conduct myself hereafter. I found, for instance, that nothing is more ordinary than for a hand to reach out suddenly from behind you and carry off your winnings. A dispute follows, often an uproar — and then be so good as to find witnesses to prove that the stake was yours!"
+  ],
+  "source": "rendering",
+  "zh_title": "赌徒",
+  "en_title": "The Gambler",
+  "zh_author": "陀思妥耶夫斯基",
+  "en_author": "Fyodor Dostoevsky",
+  "lang": "ru"
+ },
+ {
+  "i": 37,
+  "zh": [
+   "“当理发师拿起他的工具时，我朝我的头发看了最后一眼，那就是结局。我从来不为那样的小事哭鼻子。不过我承认，当我看到原来可爱的头发安放在桌子上，自己头上只剩下短而乱的发根时，觉得很不自在。我几乎像被斫去一只手臂或一条腿。那女人见我看着那头发，便捡出一长绺给我保留着。我把它交给你，妈妈，以纪念往昔秀发披肩的美丽。其实留短发很舒服，我可不想再要那浓密长发了。”"
+  ],
+  "en": [
+   "“I took a last look at my hair while the man got his things, and that was the end of it. I never snivel over trifles like that. I will confess, though, I felt queer when I saw the dear old hair laid out on the table, and felt only the short rough ends of my head. It almost seemed as if I’d an arm or leg off. The woman saw me look at it, and picked out a long lock for me to keep. I’ll give it to you, Marmee, just to remember past glories by, for a crop is so comfortable I don’t think I shall ever have a mane again.”"
+  ],
+  "source": "original",
+  "zh_title": "小妇人",
+  "en_title": "Little Women",
+  "zh_author": "路易莎·梅·奥尔科特",
+  "en_author": "Louisa May Alcott",
+  "lang": "en"
+ },
+ {
+  "i": 38,
+  "zh": [
+   "她们默默地吻了她，寂静无声地出去了，仿佛亲爱的病人就睡在隔壁房间似的。贝思和艾米尽管有着巨大的忧伤也很快就睡着了，可是梅格却睡不着，想着她短短的人生中所经历过的最严重的心事。乔躺着不动，她姐姐还以为她睡着了。当梅格碰到一张潮湿的脸颊时，一声憋着的呜咽使她喊了起来：",
+   "“乔，亲爱的，怎么了？你在哭父亲吗？”",
+   "“我的——我的头发！”可怜的乔放声哭了起来，她想用枕头把自己的感情压下去，却是徒劳。",
+   "梅格一点都不觉得好笑，她无限温柔地吻着抚摸着这个苦恼的女英雄。",
+   "“我并不后悔，”乔哽噎着声明说，“如果有可能，我明天还会这么做的。这仅仅是我虚荣、自私的一面，卖掉了头发又来哭泣这太傻了。别告诉任何人，现在一切都过去了。我还以为你睡着了呢，所以就想私下里为我那一点美丽悲叹两声。你怎么还醒着？”"
+  ],
+  "en": [
+   "They kissed her quietly, and went to bed as silently as if the dear invalid lay in the next room. Beth and Amy soon fell asleep in spite of the great trouble, but Meg lay awake, thinking the most serious thoughts she had ever known in her short life. Jo lay motionless, and her sister fancied that she was asleep, till a stifled sob made her exclaim, as she touched a wet cheek...",
+   "“Jo, dear, what is it? Are you crying about father?”",
+   "“My... My hair!” burst out poor Jo, trying vainly to smother her emotion in the pillow.",
+   "It did not seem at all comical to Meg, who kissed and caressed the afflicted heroine in the tenderest manner.",
+   "“I’m not sorry,” protested Jo, with a choke. “I’d do it again tomorrow, if I could. It’s only the vain part of me that goes and cries in this silly way. Don’t tell anyone, it’s all over now. I thought you were asleep, so I just made a little private moan for my one beauty. How came you to be awake?”"
+  ],
+  "source": "original",
+  "zh_title": "小妇人",
+  "en_title": "Little Women",
+  "zh_author": "路易莎·梅·奥尔科特",
+  "en_author": "Louisa May Alcott",
+  "lang": "en"
+ },
+ {
+  "i": 39,
+  "zh": [
+   "在我们道别的这会儿我再说一遍……因为用不着欺骗我们自己，我们这次别后再不见面了，你也能感觉得出来……你做得很聪明，你生来不是过我们那种艰辛和贫穷生活的人。你没有不顾一切的锐气和激越的忿懑，但有年轻人的勇敢和年轻人的热忱，而这些，对我们的事业是没有用的。"
+  ],
+  "en": [
+   "Let me say it once more, now that we are parting… for there is no use deceiving ourselves: we shall not meet again after this, and you feel it yourself… You have done sensibly; you were not made for our bitter, harsh, solitary life. There is no insolence in you, no anger, but you have the daring of youth and the ardour of youth — and those are of no use for our business."
+  ],
+  "source": "rendering",
+  "zh_title": "父与子",
+  "en_title": "Fathers and Sons",
+  "zh_author": "屠格涅夫",
+  "en_author": "Ivan Turgenev",
+  "lang": "ru"
+ },
+ {
+  "i": 40,
+  "zh": [
+   "“你真是要和我永远告别吗，叶夫根尼？”阿尔卡季悲哀地问，“就没有别的话要跟我说了？”",
+   "“有，阿尔卡季，还有话要说，但不想说，因为都是些浪漫主义，也就是说都是些多愁善感之词。你快快结婚吧，快快筑好窝，生他一大群孩子。他们会是很聪明的，因为他们将生活在新的时代，不像我们这样生不逢时。哦，马车已准备好了，该上路啦！我已和所有的人告过别……咱俩要不要拥抱一下？”",
+   "阿尔卡季抱住曾有过一段师友之谊的巴扎罗夫的脖子，泪水潸然而下。"
+  ],
+  "en": [
+   "“Are you really saying goodbye to me for ever, Yevgeny?” Arkady asked sadly. “And have you nothing else to say to me?”",
+   "“There is, Arkady, there is something else to say, but I shall not say it, because it is all romanticism — which is to say, sentimentality. Marry quickly, and make your nest quickly, and get yourself a great many children. They will be clever, because they will be born into a new time, and not out of season as we were. Ah, the horses are ready, it is time to go! I have taken leave of everyone… Well then — shall we embrace?”",
+   "Arkady threw his arms about the neck of Bazarov, who had once been something between a teacher and a friend to him, and the tears streamed down his face."
+  ],
+  "source": "rendering",
+  "zh_title": "父与子",
+  "en_title": "Fathers and Sons",
+  "zh_author": "屠格涅夫",
+  "en_author": "Ivan Turgenev",
+  "lang": "ru"
+ },
+ {
+  "i": 41,
+  "zh": [
+   "他站起身来，把娜塔莎从安乐椅上抱起来，把她紧紧地、紧紧地贴在自己心口。",
+   "“她又在这里了，又贴着我的心了！”他叫道，“噢，我感谢你，上帝，感谢你的一切，一切，感谢你的恼怒，也感谢你的仁慈！……也感谢暴风雨过后你现在又照耀着我们的阳光！为了这千金一刻，我要感谢你！噢！尽管我们是被侮辱的人，尽管我们是被损害的人，但是我们又在一起了，就让那些骄横不可一世的人，就让那些侮辱过我们和损害过我们的人现在去得意吧！就让他们拿石头打我们吧！别怕，娜塔莎……我们要手拉手地走出去，我要对他们说：这是我的爱女，这是我的掌上明珠，这是我的清白无辜的女儿，她受过你们的侮辱和损害，但是我爱她，我要永生永世地祝福她！……”"
+  ],
+  "en": [
+   "He rose to his feet, lifted Natasha out of the armchair, and pressed her close, close against his heart.",
+   "“She is here again, against my heart again!” he cried. “Oh, I thank Thee, God, I thank Thee for everything, for everything, for Thy anger and for Thy mercy too!… and for the sun that shines on us now, after the storm! For this priceless moment I thank Thee! Oh! Though we are the insulted, though we are the injured, we are together again — and let the proud and haughty exult now if they will, let those who have insulted and injured us exult! Let them cast stones at us! Do not be afraid, Natasha… We shall go out hand in hand, and I shall say to them: this is my beloved daughter, this is the apple of my eye, this is my innocent daughter, whom you have insulted and injured — but I love her, and I shall bless her for ever and ever!…”"
+  ],
+  "source": "rendering",
+  "zh_title": "被侮辱与被损害的",
+  "en_title": "The Insulted and Humiliated",
+  "zh_author": "陀思妥耶夫斯基",
+  "en_author": "Fyodor Dostoevsky",
+  "lang": "ru"
+ },
+ {
+  "i": 42,
+  "zh": [
+   "他觉得他的真正的初恋正是在这个春天开始的。那时，他天天都在爱慕着某个人、某件事，热恋着一切中学的女同学以及世界上所有的姑娘！现在，他觉得那些日子已经非常遥远了！那时候，他还完全是个孩子，天真无瑕、淳朴忠厚，他的那些小小的喜悦、悲伤和梦想还是那样贫乏！",
+   "他那没有具体对象的精神恋爱不过是一种梦幻，更确切地说，不过是一场美梦的幻影而已。然而今天，世界上存在着一个卡佳，存在着一个体现了整个世界的心灵，这个心灵凌驾于他和一切事物之上。"
+  ],
+  "en": [
+   "It seemed to him that his real first love had begun in that very spring. In those days he was in love every day with someone, with something; he was in love with every schoolgirl at the gymnasium and with every girl in the world! Now those days seemed to him very far off. He had been altogether a child then — innocent, simple, guileless — and how meagre his small joys, his small sorrows and his small dreams had been!",
+   "That love of the spirit, which had no object of its own, was only a daydream — or, to put it more exactly, only the phantom of a beautiful dream. But today there exists in the world a Katya; there exists a soul in which the whole world is embodied, and that soul stands above him and above everything else."
+  ],
+  "source": "rendering",
+  "zh_title": "米佳的爱情",
+  "en_title": "Mitya’s Love",
+  "zh_author": "蒲宁",
+  "en_author": "Ivan Bunin",
+  "lang": "ru"
+ },
+ {
+  "i": 43,
+  "zh": [
+   "“没有旋律，没有节奏，没有主题的经营；只是一种流汁，没有冷却的液体，它可能适应任何形式而自己并没有一个固定的形式；它什么都不像；只是一片混沌中的几点微光。”",
+   "克利斯朵夫笑了笑回答：“差不多是这么回事。混沌的眼睛在世界的幕后发光……”",
+   "但来客不懂得诺瓦利斯的这句名言，只暗暗的想：“他才气尽了。”"
+  ],
+  "en": [
+   "“No melody, no rhythm, no working out of a theme; only a kind of fluid, an uncooled liquid, which might take any shape you please and has no fixed shape of its own; it is like nothing at all; only a few glimmers of light in the middle of a chaos.”",
+   "Christophe smiled and answered: “That is very nearly it. The eyes of chaos shining from behind the curtain of the world…”",
+   "But the visitor did not know that saying of Novalis, and only thought privately: “He is played out.”"
+  ],
+  "source": "rendering",
+  "zh_title": "约翰·克利斯朵夫",
+  "en_title": "Jean-Christophe",
+  "zh_author": "罗曼·罗兰",
+  "en_author": "Romain Rolland",
+  "lang": "fr"
+ },
+ {
+  "i": 44,
+  "zh": [
+   "白天实在太短了。他要学的东西真多呀。他拚命少睡，只睡五个钟点，发现这样也过得下去。他试试只睡四个半钟点，结果不成，只得没奈何地回复到睡五个钟点。他要干的工作很多，巴不得把醒着的时间一股脑儿用来干其中的任何一项。他停止了写作来读书，停止了读书上图书馆，硬着头皮离开那间知识的海图室，或者放下阅览室里的杂志，上面满载着作家们怎样卖掉稿件的诀窍，这些时候，他总是怀着恋恋不舍的心情。当他在罗丝那儿，得站起身来告辞时，心弦总像被刀割一般；不过，一到了黑黝黝的大街上，他就横冲直撞地飞跑，为了尽量节省时间，尽早赶回家去读书。最难受的是：不得不合上代数或物理书，收拾起笔记本和铅笔，闭上疲倦的眼睛入睡。他想到要停止生活就恨，即使停止的时间是那么短也罢，而唯一的安慰是，闹钟的指针被拨在五个钟点以后的地方。不管怎么着，他至多只损失五个钟点，到那时候，叮铃铃的钟声会把他从无知无觉的境界里一把拖起来，他面前就又是十九个钟点的辉煌的一天啦。"
+  ],
+  "en": [
+   "The days were too short. There was so much he wanted to study. He cut his sleep down to five hours and found that he could get along upon it. He tried four hours and a half, and regretfully came back to five. He could joyfully have spent all his waking hours upon any one of his pursuits. It was with regret that he ceased from writing to study, that he ceased from study to go to the library, that he tore himself away from that chart-room of knowledge or from the magazines in the reading-room that were filled with the secrets of writers who succeeded in selling their wares. It was like severing heart strings, when he was with Ruth, to stand up and go; and he scorched through the dark streets so as to get home to his books at the least possible expense of time. And hardest of all was it to shut up the algebra or physics, put note-book and pencil aside, and close his tired eyes in sleep. He hated the thought of ceasing to live, even for so short a time, and his sole consolation was that the alarm clock was set five hours ahead. He would lose only five hours anyway, and then the jangling bell would jerk him out of unconsciousness and he would have before him another glorious day of nineteen hours."
+  ],
+  "source": "original",
+  "zh_title": "马丁·伊登",
+  "en_title": "Martin Eden",
+  "zh_author": "杰克·伦敦",
+  "en_author": "Jack London",
+  "lang": "en"
  }
 ]

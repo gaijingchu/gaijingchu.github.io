@@ -313,44 +313,50 @@ def build():
     A('    <p class="lede lang-zh zh-text" style="font-size:15px">点击书名展开段落；'
       '较长的篇章会另开一页。'
       '英语原著引自出版原文；其余均据我所读的中译本转译成英文。</p>')
-    A('    <div class="quotes">')
-    for q in quotes:
-        is_orig = q["source"] == "original"
-        prov_cls = "prov orig-text" if is_orig else "prov"
-        prov = L("原文" if is_orig else "转译", "original" if is_orig else "rendering")
-        title  = '<span class="qt">' + L("《" + q["zh_title"] + "》", q["en_title"]) + '</span>'
-        author = '<span class="qa">' + L(q["zh_author"], q["en_author"]) + '</span>'
-        badge  = f'<span class="{prov_cls}">{prov}</span>'
-        if q.get("full"):
-            # long passage: the title links straight to its own full-text page
-            A(f'      <a class="qlink" href="passages.html#q{q["i"]}">')
-            A('        ' + title)
-            A('        ' + author)
-            A('        ' + badge)
-            A('      </a>')
+    for key, zh_h, en_h in GROUPS:
+        group = [q for q in quotes if q.get("lang") == key]
+        if not group:
             continue
-        A('      <details>')
-        A('        <summary>')
-        A('          ' + title)
-        A('          ' + author)
-        A('          ' + badge)
-        A('        </summary>')
-        A('        <blockquote class="lang-zh zh-text">')
-        for p in q["zh"]:
-            A(f'          <p>{p}</p>')
-        A('        </blockquote>')
-        if q.get("en"):
-            A('        <blockquote class="lang-en">')
-            for p in q["en"]:
-                A('          <p>' + p.replace("\n", "<br>") + '</p>')
+        A('    <h3 class="qgroup">' + L(zh_h, en_h)
+          + f'<span class="n">{len(group)}</span></h3>')
+        A('    <div class="quotes">')
+        for q in group:
+            is_orig = q["source"] == "original"
+            prov_cls = "prov orig-text" if is_orig else "prov"
+            prov = L("原文" if is_orig else "转译", "original" if is_orig else "rendering")
+            title  = '<span class="qt">' + L("《" + q["zh_title"] + "》", q["en_title"]) + '</span>'
+            author = '<span class="qa">' + L(q["zh_author"], q["en_author"]) + '</span>'
+            badge  = f'<span class="{prov_cls}">{prov}</span>'
+            if q.get("full"):
+                # long passage: the title links straight to its own full-text page
+                A(f'      <a class="qlink" href="passages.html#q{q["i"]}">')
+                A('        ' + title)
+                A('        ' + author)
+                A('        ' + badge)
+                A('      </a>')
+                continue
+            A('      <details>')
+            A('        <summary>')
+            A('          ' + title)
+            A('          ' + author)
+            A('          ' + badge)
+            A('        </summary>')
+            A('        <blockquote class="lang-zh zh-text">')
+            for p in q["zh"]:
+                A(f'          <p>{p}</p>')
             A('        </blockquote>')
-        else:
-            A('        <blockquote class="lang-en"><p style="color:var(--faint)">'
-              'The published original for this passage is not reproduced here.</p></blockquote>')
-        if q.get("orig"):
-            A(f'        <div class="orig"><em>{q["orig_label"]}:</em> {q["orig"]}</div>')
-        A('      </details>')
-    A('    </div>')
+            if q.get("en"):
+                A('        <blockquote class="lang-en">')
+                for p in q["en"]:
+                    A('          <p>' + p.replace("\n", "<br>") + '</p>')
+                A('        </blockquote>')
+            else:
+                A('        <blockquote class="lang-en"><p style="color:var(--faint)">'
+                  'The published original for this passage is not reproduced here.</p></blockquote>')
+            if q.get("orig"):
+                A(f'        <div class="orig"><em>{q["orig_label"]}:</em> {q["orig"]}</div>')
+            A('      </details>')
+        A('    </div>')
     A('  </section>')
 
     A('    </main>')
